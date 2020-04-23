@@ -1,1 +1,1 @@
-# ConsistentMetaReg
+# Consistent MetaReg
