@@ -111,7 +111,7 @@ if __name__ == '__main__':
     argparser.add_argument('--update_step', type=int, help='task-level inner update steps', default=5)
     argparser.add_argument('--update_step_test', type=int, help='update steps for finetunning', default=10)
     argparser.add_argument('--load_path', type=str, help='model save path',
-                           default='/data/liuyong/TianPinzhuo/IJCAI/cmMAML_tieredImageNet/best_model.pth.tar')
+                           default='/data/save_models/best_model.pth.tar')
 
     args = argparser.parse_args()
 

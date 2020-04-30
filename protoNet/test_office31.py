@@ -26,8 +26,8 @@ def get_model():
 if __name__ == '__main__':
     setup_seed(1234)
     parser = argparse.ArgumentParser()
-    parser.add_argument('--gpu', default='5')
-    parser.add_argument('--load', default='/data/liuyong/TianPinzhuo/IJCAI/protype_office31/best_model.pth.tar',
+    parser.add_argument('--gpu', default='0')
+    parser.add_argument('--load', default='/data/save_models/best_model.pth.tar',
                         help='path of the checkpoint file')
     parser.add_argument('--episode', type=int, default=1000,
                         help='number of episodes to test')

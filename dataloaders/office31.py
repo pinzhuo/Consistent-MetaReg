@@ -23,9 +23,9 @@ class Office31Dataset(Dataset):
         self.img_size = np.array(img_size)
         self.phase = phase
 
-        data_root = ['/data/liuyong/TianPinzhuo/domain adaption/office31/amazon/images',
-                     '/data/liuyong/TianPinzhuo/domain adaption/office31/dslr/images',
-                     '/data/liuyong/TianPinzhuo/domain adaption/office31/webcam/images'
+        data_root = ['/data/office31/amazon/images',
+                     '/data/office31/dslr/images',
+                     '/data/office31/webcam/images'
                      ]
         clsnames = os.listdir(data_root[0])
         self.datasetlen = len(data_root)

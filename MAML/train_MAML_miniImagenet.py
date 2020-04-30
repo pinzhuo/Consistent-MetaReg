@@ -172,7 +172,7 @@ if __name__ == '__main__':
     argparser.add_argument('--update_lr', type=float, help='task-level inner update learning rate', default=0.01)
     argparser.add_argument('--update_step', type=int, help='task-level inner update steps', default=5)
     argparser.add_argument('--update_step_test', type=int, help='update steps for finetunning', default=10)
-    argparser.add_argument('--save_path', type=str, help='model save path', default='/data/liuyong/TianPinzhuo/IJCAI/MAML_image_30/')
+    argparser.add_argument('--save_path', type=str, help='model save path', default='/data/save_models/..')
 
     args = argparser.parse_args()
 

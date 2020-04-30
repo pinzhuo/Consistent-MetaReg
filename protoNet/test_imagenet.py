@@ -26,7 +26,7 @@ if __name__ == '__main__':
     setup_seed(1234)
     parser = argparse.ArgumentParser()
     parser.add_argument('--gpu', default='0')
-    parser.add_argument('--load', default='/data/liuyong/TianPinzhuo/IJCAI/protype_tieredimagenet_5way/best_model.pth.tar',
+    parser.add_argument('--load', default='/data/save_models/best_model.pth.tar',
                         help='path of the checkpoint file')
     parser.add_argument('--episode', type=int, default=2000,
                         help='number of episodes to test')

@@ -90,7 +90,7 @@ def main():
         val_accuracies = []
 
         val_dataset = Office31Dataset(num_classes=args.n_way, num_support=args.k_spt,
-                                      num_query=args.k_qry, num_epoch=32, phase='val')
+                                      num_query=args.k_qry, num_epoch=500, phase='val')
         dloader_val = DataLoader(val_dataset, shuffle=False, num_workers=32, batch_size=1)
 
         for i, batch in enumerate(tqdm(dloader_val)):
@@ -149,7 +149,7 @@ if __name__ == '__main__':
     argparser.add_argument('--update_lr', type=float, help='task-level inner update learning rate', default=0.01)
     argparser.add_argument('--update_step', type=int, help='task-level inner update steps', default=5)
     argparser.add_argument('--update_step_test', type=int, help='update steps for finetunning', default=10)
-    argparser.add_argument('--save_path', type=str, help='model save path', default='/data/liuyong/TianPinzhuo/IJCAI/MAML_office31_seed')
+    argparser.add_argument('--save_path', type=str, help='model save path', default='/data/save_models/...')
 
     args = argparser.parse_args()
 

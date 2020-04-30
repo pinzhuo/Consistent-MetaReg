@@ -30,7 +30,7 @@ if __name__ == '__main__':
     parser.add_argument('--cls-head', type=str, default='R2D2',
                         help='R2D2 or SVM')
     parser.add_argument('--gpu', default='3')
-    parser.add_argument('--load', default='/data/liuyong/TianPinzhuo/IJCAI/r2d2_tieredImageNet_5way_batch4/best_model.pth.tar',
+    parser.add_argument('--load', default='/data/save_models/best_model.pth.tar',
                         help='path of the checkpoint file')
     parser.add_argument('--episode', type=int, default=2000,
                         help='number of episodes to test')

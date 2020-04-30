@@ -79,13 +79,13 @@ if __name__ == '__main__':
     parser.add_argument('--val-query', type=int, default=10,
                         help='number of query examples per validation class')
     parser.add_argument('--train-way', type=int, default=5,
-                        help='number of classes in one training episode')
+                        help='number of classes in one training task')
 
-    parser.add_argument('--save-path', default='/data/liuyong/TianPinzhuo/IJCAI/reverse_SVM_office31_Fnorm_5way_batch4')
+    parser.add_argument('--save-path', default='/data/save_models/...')
 
     trade = 5
 
-    parser.add_argument('--gpu', default='3')
+    parser.add_argument('--gpu', default='0')
 
     parser.add_argument('--episodes-per-batch', type=int, default=4,
                         help='number of episodes per batch')

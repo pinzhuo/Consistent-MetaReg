@@ -26,7 +26,7 @@ from PIL import ImageEnhance
 from pdb import set_trace as breakpoint
 
 # Set the appropriate paths of the datasets here.
-_TIERED_IMAGENET_DATASET_DIR = '/data/liuyong/TianPinzhuo/tiered_ImageNet/'
+_TIERED_IMAGENET_DATASET_DIR = '/data/tiered_ImageNet/'
 
 
 def buildLabelIndex(labels):

@@ -78,12 +78,12 @@ if __name__ == '__main__':
     parser.add_argument('--val-query', type=int, default=10,
                         help='number of query examples per validation class')
     parser.add_argument('--train-way', type=int, default=5,
-                        help='number of classes in one training episode')
+                        help='number of classes in one training task')
 
     trade = 5
 
-    parser.add_argument('--save-path', default='/data/liuyong/TianPinzhuo/IJCAI/reverse_tieredImageNet_batch4')
-    parser.add_argument('--gpu', default='5')
+    parser.add_argument('--save-path', default='/data/save_models/...')
+    parser.add_argument('--gpu', default='0')
 
     parser.add_argument('--episodes-per-batch', type=int, default=8,
                         help='number of episodes per batch')

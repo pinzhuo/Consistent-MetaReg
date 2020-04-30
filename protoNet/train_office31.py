@@ -59,8 +59,8 @@ if __name__ == '__main__':
     parser.add_argument('--train-way', type=int, default=5,
                         help='number of classes in one training episode')
 
-    parser.add_argument('--save-path', default='/data/liuyong/TianPinzhuo/IJCAI/protype_office31_batch4')
-    parser.add_argument('--gpu', default='5')
+    parser.add_argument('--save-path', default='/data/save_models/...')
+    parser.add_argument('--gpu', default='0')
 
     parser.add_argument('--episodes-per-batch', type=int, default=4,
                         help='number of episodes per batch')
