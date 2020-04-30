@@ -26,7 +26,7 @@ from PIL import ImageEnhance
 from pdb import set_trace as breakpoint
 
 # Set the appropriate paths of the datasets here.
-_MINI_IMAGENET_DATASET_DIR = '/data/liuyong/TianPinzhuo/domain adaption/miniImageNet'
+_MINI_IMAGENET_DATASET_DIR = '  '
 
 
 def buildLabelIndex(labels):
